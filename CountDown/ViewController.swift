@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         countLabel.text = String(time)
+        startButton.layer.cornerRadius = 10
     }
     
     // ボタンが押された時の処理
@@ -30,6 +31,10 @@ class ViewController: UIViewController {
                 self.performSegue(withIdentifier: "next", sender: nil)
             }
         })
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        timer.invalidate()
     }
 }
 
