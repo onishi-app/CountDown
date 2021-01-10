@@ -24,6 +24,9 @@
                                 <state key="normal" title="スタート">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Oh-Fi-nek"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvd-aC-8gZ">
                                 <rect key="frame" x="125" y="204" width="165" height="79"/>
@@ -37,6 +40,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="countLabel" destination="pvd-aC-8gZ" id="mRz-lc-rpA"/>
+                        <outlet property="startButton" destination="kpz-tC-1Ms" id="XCX-4Q-5E0"/>
                         <segue destination="iVH-fn-mkE" kind="presentation" identifier="next" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="JgG-uo-TWI"/>
                     </connections>
                 </viewController>
